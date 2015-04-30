@@ -1,5 +1,5 @@
 package shape;
-public class Shape {
+public class Shape implements Drawable {
 
 	int x;
 	int y;
@@ -45,6 +45,13 @@ public class Shape {
 					+ "] 에 점을 지웠습니다. ");
 			
 		}
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("좌표 [x=" + getX() + ", y=" + getY()
+				+ "] 에 점을 그렸습니다. ");
+		
 	}
 
 }

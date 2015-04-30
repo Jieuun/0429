@@ -27,6 +27,14 @@ public class ShapeTest {
 		po.setY(50);
 		po.setColor("red");*/
 		po.show();
+		
+		////인터페이스 test
+		Drawable drawable = new Shape(10,20);
+		drawable.draw();
+		
+		
+		
+		
 	}
 
 }

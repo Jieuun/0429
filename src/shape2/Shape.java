@@ -1,9 +1,15 @@
 package shape2;
 
-public class Shape {
+import shape.Drawable;
+
+public abstract class Shape implements Drawable{
 	
-	public void draw(){
-		System.out.println("구체적인 도형을 그릴 수 없습니다. 상속해서 재정의하세요.");
-	}
+	private String color;
+	
+	
+	public abstract double caculateArea();
+	
+	
+	
 
 }
